@@ -1,6 +1,38 @@
 # PythonForDataAnalyst-2
 The Pandas section includes several sub-topics on data analysis, such as getting information about data, handling missing data, selecting specific columns, and calculating statistics a section on the random library and handling date and time data wide range of topics related to data manipulation and analysis using Python and its libraries.
 
+## Function
+
+Python Functions is a block of statements that return the specific task. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again.
+
+ - In mathematics, a function is a process that relates between an input and an output.
+ - In Python, apart from these relationship functions, functions are also a way to organize code with the ultimate goal of code being reusable.
+ - Functions are defined with the def keyword followed by the function name and parameters in brackets ().
+ - Optionally, a docstring can be added - a documentation string that describes the context of the function.
+
+   <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/395f9bac-83ac-4a8b-be87-d82afe0be7f7" /></div>
+   
+ - By default, Python will position according to the registration order in which it was defined, and must be called in that order.
+   
+  <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/a784c1cb-f10c-4009-88d7-0eb0b906ec88" /></div>
+
+## Return
+
+The Phython Return statement is a special statement that can use inside in function or method to send the function’s result back to the caller. A Return statement consist of the return keyword followed by an optional return value. The return value of a Python function can be any Python object.
+
+<div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/8a284d49-2c27-4a53-88e8-32ab2f9589ee" /></div>
+
+  - The return value of a function can be stored in a variable.
+  - This will differentiate a function that returns a value from a function that does not return a value (often referred to as a procedure).
+
+   <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/de0f405a-6f6b-44fb-9967-738c1fd64c31" /></div>
+
+## Pass by reference vs value
+
+The difference between pass-by-reference and pass-by-value is that modifications made to arguments passed in by reference in the called function have effect in the calling function, whereas modifications made to arguments passed in by value in the called function can not affect the calling function.
+
+<div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/7647b192-e5bc-416e-9cd6-770deafe1185" /></div>
+
 ## NUMPY
 
 NumPy is a Python library used for working with arrays. It also has functions for working in the domain of linear algebra, fourier transform, and matrices. NumPy was created in 2005 by Travis Oliphant. It is an open source project and you can use it freely. NumPy stands for Numerical Python.
@@ -152,6 +184,62 @@ loc is used to call its explicit indices, while iloc is used to call its implici
 <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/bc052728-cc8d-42a7-88aa-caca8da87aa9" /></div>
 
 ## Data Frame
+
+DataFrame is a two-dimensional tabular data structure with labeled axes (rows and columns). This allows for easy manipulation and analysis of data. Essentially, a DataFrame is a collection of series, with at least one series.
+
+DataFrame With 2 Series : 
+
+<div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/494b1989-2362-447c-931f-07b5f6e835a2" /></div>
+
+## Load Data CSV
+
+For example load data ‘Kelahiran_Bayi_Jakarta_2020’.csv that has been aplouded in the same folder in Python.
+
+<div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/51c90d68-1ebe-47a7-9b8b-0f8bbcc34fb2" /></div>
+
+ - Head()    : Head()function to a viewing top in data by default is top five can be customized as required.
+   
+    <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/59059804-7fc9-4edb-a4a0-ed62fc15ac23" /></div>
+   
+ - Tail()    : Tail()returns the last 5 rows if a number is not specified,returns a specified number of last rows.
+
+    <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/e2e24fb5-5df3-4133-98c8-eee64a18eb3c" /></div>
+    
+ - Info()    : Info()Info method prints information about the DataFrame.
+
+    <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/8a59be01-3bda-42cc-99bc-9be1a0985323" /></div>
+     
+ - IsNull()  : isnull used to finds NULL values in DataFrame.
+
+    <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/c7e5bed2-b016-4767-9cae-2cc03800f8d9" /></div>
+    
+ - NotNull() : notnull used to finds values that are NOT NULL.
+
+    <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/9c475f88-d6a7-4145-b53c-709ed2e99ab6" /></div>
+    
+ - Shape     : Shape is the number of rows and columns on the index of the DataFrame.
+
+    <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/3a7bc1ce-7954-4593-a4b3-d0da34f761ba" /></div>
+    
+ - Columns   : Column returns the label of each column in the DataFrame.
+
+    <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/12a28d28-921f-4cc5-9587-1299add1859f" /></div>
+
+ - Describe  : Returns a description summary for each column in the DataFrame,describe contains numeric data from managed datasets.
+
+    <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/ccd2e589-ea6f-401f-ae42-ca5f453d7840" /></div>
+
+ - Mean      : Returns a description summary for each column in the DataFrame.
+
+    <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/c8d4d8e2-e99b-4bbe-b31a-f46722c198e0" /></div>
+    
+ - Median    : Returns a description summary for each column in the DataFrame.
+
+    <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/73c24bab-83b5-45e5-9bf5-c2b9856aa47a" /></div>
+    
+ - Mode      : Returns a description summary for each column in the DataFrame.
+
+    <div align="center"><img src="https://github.com/fakhirahazhar/PythonForDataAnalyst-2/assets/165735471/0dbdb6b6-c7d3-4f0d-b97e-c84e24b3f707" /></div>
 
  - The df.unique() syntax is used to get unique values in the columns of a pandas DataFrame.
 
